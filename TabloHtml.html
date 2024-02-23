@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+
+    <style type="text/css">
+
+        table{
+            border-style: solid;         /* Hücre içi metin hizalama: "text-align" ve "vertical-align"  */  
+            border-color: brown;
+            border-radius: 5px;    /*  kenarlıklar 2 çizgi görünüyorsa "border-collapse: collapse;" ile düzeltilir.  */
+            margin: 10px;                     
+            padding: 5px;
+
+        }
+        
+        th,td{
+            border-style: dashed;
+            border-color: red;
+            padding: 5px;
+            margin: 5px;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- Tablo oluşturma
+    satır<tr> ve sütunlardan<th> oluşur.
+    bunların keşiştiği yerde hücreler<td> olur.
+    -->
+    <table>
+        <caption> İlk tablomuz</caption>
+        <tr> <!-- ilk satır -->
+            <th>1.başlık</th>
+            <th>2.Başlık</th>
+            <th>3.başlık</th>
+        </tr>
+        <tr> <!-- 2.satır -->
+            <td>1.içerik</td>
+            <td>2.içerik</td>
+            <td>3.içerik</td>
+
+
+        </tr>
+    </table>
+
+    <!-- ileri seviye tablolar için:
+    
+        >> "thead" , "tbody" , "tfood" .. 
+
+    -->
+
+    <!-- hücre birleştirmek için "<td>" ;
+        
+    >> "rowspan" .. sütunları 
+    >> "colspan" .. satırları birleştirir!
+    -->
+
+    <table id="table2">
+        <caption>satır/sütun birleştirme</caption>
+
+        
+        <thead>
+            <tr>
+                <th>1.başlık</th>
+                <th>2.başlık</th>
+                <th>3.başlık</th>
+                <th>4.başlık</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- 1 ve 5'i alt üst birleştirdik. -->
+                <td rowspan="2">1.içerik</td>
+                <td>2.içerik</td>
+                <!-- 3 ve 4'ü birleştirelim -->
+                <td colspan="2">3.içerik</td>
+                <td>4.içerik</td>
+             </tr>
+             <tr>
+                <td>5.içerik</td>
+                <td>6.içeri</td>
+                <td>7.içeri</td>
+                <td>8.içeri</td>
+             </tr>
+        </tbody>
+
+        
+
+
+
+
+
+    </table>
+
+
+
+
+</body>
+</html>

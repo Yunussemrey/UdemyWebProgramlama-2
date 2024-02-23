@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onay kutuları</title>
+</head>
+<body>
+    
+     <!-- Onay kutuları -->
+
+<form name="onayKutuları" action="#" method="post" target="_blank">
+
+    <h3>cinsiyetinizi seçiniz:</h3>
+<input type="checkbox" name="bay">Erkek <br> <!-- "Checkbox" özelliği ile onay kutuları yaratılabilir. -->
+<input type="checkbox" name="bayan">Kadın <br> <!-- Name farklı olsa iyi olur. -->
+
+</form>
+
+      <!-- Seçenek kutuları -->
+
+
+<br> <hr width="300px">
+
+
+<form name="seçenekKutuları" action="#" method="post" target="_blank">
+
+    <h3>Uğraştığın spor dalını seç:</h3>
+    <input type="radio" name="spor" value="Futbol" checked>Futbol <br> <!-- "checked" sayfa ilk açıldığında varsayılan olarak seçili gelmesi için -->
+    <input type="radio" name="spor" value="Basketbol">Basketbol <br>
+    <input type="radio" name="spor" value="Hentbol">Hentbol <!-- Aynı grupta olan kutuların name özelliği aynı olur -->
+
+</form>
+
+<!-- Eğer çok fazla seçeneğin olursa "seçenek listesini" kullanmalısın -->
+
+<!-- C O M B O L O X -->
+
+<form>
+    <p>Dersler:</p> 
+    <select name="Dersler">   <!--Burada "size" ve "multiple" özelliğide atayabilirsiniz!-->
+        <option>Ders seçiniz!</option>
+       <option>Matematik</option>
+       <option>Fizik</option>
+       <option>Kimya</option>
+       <option>Biyoloji</option>
+       <option>Türk Dili ve Edebiyatı</option>
+       <option>İngilizce</option>
+    </select>
+</form>
+
+<!--Gizli form elemanı-->
+<form>
+            <!--Kullanıcının görmesini istemiyorsanız .. -->
+    <input type="hidden" name="tarih" value="5 ağustos">
+
+
+</form>
+</body>
+</html>

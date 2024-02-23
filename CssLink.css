@@ -1,0 +1,61 @@
+nav{
+    border-style: none; /*  burayı sonradan none yaparak daha estetik bir görüntü oluşturabiliriz.*/
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+    height: 100px;
+}
+
+
+
+ul{
+    list-style-type: none;
+}
+li{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: yellowgreen;
+    box-shadow: 3px 2px 4px yellowgreen;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    float: left;
+    left: 50px;
+    background-color: yellowgreen;
+    /* Font işlemleri */
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+
+}
+a{ /* genel olarak tüm linkler için sabit değerler verdik */
+    color: aliceblue;
+    text-decoration: none;
+}
+/* id'lere göre linklere özel değerler atayacağız. */
+
+#a1:link{
+    color: red;
+    text-decoration: underline;
+}
+#a1:visited{
+    color:cornflowerblue;
+    text-decoration:overline;
+}
+#a1:hover{
+    font-size: 22px;
+    text-decoration: none;
+    color: salmon;
+
+}
+#a2:active{
+    font-size: 25px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+#a3:hover{
+    color: coral;
+    text-shadow: 2px 3px 4x white;
+}

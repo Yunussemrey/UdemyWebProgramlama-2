@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elemanları</title>
+</head>
+<body>
+    <!-- Formlar ziyaretçilerden veri almaya yarayan metinsel ya da sayısal kutulardır. -->
+
+    <form name="AdSoyad" method="get" action="#">
+
+       Ad: <input type="text" name="isim" max="10" title="adınızı giriniz" placeholder="adınız.."  required>
+       <br>
+       Soyad: <input type="text" name="soyad" max="10" title="soyadınızı giriniz" placeholder="soyadınız.."  required>
+    </form>
+    <br> <br>
+
+    <!-- email ve url adresi girme -->
+
+  <!-- Daha şık görünmesi için "<table>" içine koyabiliriz.--> 
+
+    <!-- tablo içerisinde yapalım. Daha düzenli olsun. -->
+
+    <!-- Method parametresinde "post" yöntemi daha güvenlikli ve yaygın kullanıma sahiptir. -->
+    <form name="email" action="#" method="post" target="_blank">
+        <table>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type="email" name="email" placeholder="email adresinizi girin" value="@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Web adresi:
+                </td>
+                <td>
+                    <input type="url" name="web" placeholder="web adresinizi giriniz">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="kaydet">
+                </td>
+                <td>
+                    <input type="reset" value="sil">
+                </td>
+
+            </tr>
+
+        </table>
+
+
+    </form>
+    <!-- Metin alanı daha çok veri girilmesini sağlar -->
+    <br> <br> <hr>
+
+    <form name="Metin alanı" action="#" method="get">
+
+        <p>Metin alanı:</p><br>
+        <textarea name="metinAlanı" placeholder="metin giriniz" rows="3" cols="30"></textarea>
+
+
+    </form>
+  
+</body>
+</html>

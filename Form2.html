@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form özellikleri</title>
+</head>
+<body>
+
+<!--     
+** size >> form elemanının genişliği
+** value >> form elemanının değeri
+** placeholder >> form elemanında bir açıklama metni görünmesini sağlar
+** name >> form elemanının benzersiz adı
+** id >> form elemanının tanım kodu. css veya JS kodu uygulamak için kullanılır
+** autofocus >> sayfa açıldığında fare imlecinin form elemanını aktif etmesini sağlar
+** autocomplete >> formlara girilen verilerin daha önce girilen veriler dikkate alınarak tamamlanmasını sağlar
+** maxlenght >> form elemanına girilebilecek maksimum karakter miktarını belirler
+** required >> form elemanın mutlaka doldurulması gerektiğini belirtir. form elemanı boş bırakılırsa hata mesajı alırsınız
+** disabled >> form elemanının pasif hale getirilmesini ve kullanılmamasını sağlar
+-->
+
+<h1> Uygulama - 1</h1>
+<hr width="200px">
+
+<!-- Target parametresi verilerin gönderileceği yere ne şekilde olacağını bize verir. "_blank" yöntemi ile yeni sekme açarak gönderir. -->
+
+
+    <!-- Bu örnek form uygulamasını css kullanarak daha şık hale getirin :)  -->
+    
+<form name="uygulama-1" action="#" method="post" target="_blank">
+<caption>Aday kayıt formu</caption>
+<table>
+<tr>
+<td><p>Ad:</p> 
+</td>
+<td>
+    <input type="text" name="Ad" value="" placeholder="adınızı giriniz.." required autofocus>  <!-- "required" mutlaka doldurulması gereken alan demektir. -->
+
+</td>
+
+</tr>
+<tr>
+    <td>
+        <p>Soyad:</p>
+    </td>
+    <td>
+        <input type="text" name="Soyad" value="" placeholder="Soyadınızı giriniz.." required>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>Email:</p>
+    </td>
+    <td>
+        <input type="email" name="email" value="@gmail.com" placeholder="e-posta adresinizi giriniz.." required> 
+    </td>
+
+</tr>
+<tr>
+    <td>
+        <p>Şifre:</p>
+    </td>
+    <td>
+        <input type="password" name="şifre" value="" placeholder="lütfen şifrenizi eksiksiz giriniz.." required>
+    </td>
+</tr>
+<tr>
+    <td>
+        <p>Mesajınız varsa doldurunuz:</p>
+    </td>
+    <td>
+        <textarea name="mesaj alanı" placeholder="mesajınızı yazınız.." rows="4" cols="50">
+
+        </textarea>
+    </td>
+
+</tr>
+<tr>
+    <td>
+        <input type="submit" name="kayıt" value="Gönder">
+    </td>
+    <td>
+        <input type="reset" name="silme" value="İptal">
+    </td>
+</tr>
+
+
+
+</table>
+
+
+</form>
+
+    
+</body>
+</html>
